@@ -1,4 +1,4 @@
-# Basic demonstration of using multiple endpoints for an interview
+# Basic demonstration of using multiple endpoints for an interview.
 ---
 objects:
   - endpoint: DADict
