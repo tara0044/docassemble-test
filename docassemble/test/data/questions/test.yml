@@ -1,0 +1,43 @@
+---
+mandatory: True
+code: |
+if wasThereAWrittenContract:
+   wasThereConsideration
+   wasThereOfferAndAcceptance
+   wasThereCapacity
+   assessKScreen
+else:
+   noWrittenKScreen
+---
+event: assessKScreen
+question: |
+#Assume there is code that assesses the user’s contractual obligations
+---
+event: noWrittenKScreen
+question: |
+#Assume there is code that assesses the fact that the user does not have a written contract
+---
+question: |
+   Did both parties have capacity
+fields:
+   - no label: wasThereCapacity
+     datatype: yesno
+---
+question: |
+   Was there offer and acceptance?
+fields:
+   - no label: wasThereOfferAndAcceptance
+     datatype: yesno
+---
+question: |
+   Was there a written contract?
+fields:
+   - no label: wasThereAWrittenContract
+     datatype: yesno
+---
+question: |
+   Was there any consideration?
+fields:
+   - no label: wasThereConsideration
+     datatype: yesno
+---
